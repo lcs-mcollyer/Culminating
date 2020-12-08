@@ -9,8 +9,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 10 and 11.
  */
-let preferredWidth = 500
-let preferredHeight = 500
+let preferredWidth = 600
+let preferredHeight = 600
 /*:
  ## Required code
  
@@ -42,33 +42,11 @@ turtle.left(by: 90)
 turtle.backward(steps: 25)
 
 
+
 func drawH() {
-turtle.forward(steps: 75)
+    
+    turtle.forward(steps: 75)
 turtle.right(by: 90)
-
-turtle.forward(steps: 25)
-turtle.right(by: 90)
-
-
-turtle.forward(steps: 25)
-turtle.left(by: 90)
-
-
-turtle.forward(steps: 50)
-turtle.left(by: 90)
-
-
-turtle.forward(steps: 25)
-turtle.right(by: 90)
-
-
-turtle.forward(steps: 25)
-turtle.right(by: 90)
-
-
-turtle.forward(steps: 75)
-turtle.right(by: 90)
-
 
 turtle.forward(steps: 25)
 turtle.right(by: 90)
@@ -83,7 +61,24 @@ turtle.forward(steps: 25)
 turtle.right(by: 90)
 
 turtle.forward(steps: 25)
+turtle.right(by: 90)
 
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+
+turtle.forward(steps: 25)
+turtle.right(by: 90)
+
+turtle.forward(steps: 25)
+turtle.left(by: 90)
+
+turtle.forward(steps: 50)
+turtle.left(by: 90)
+
+turtle.forward(steps: 25)
+turtle.right(by: 90)
+
+turtle.forward(steps: 25)
 
     turtle.penUp()
     turtle.forward(steps: 50)
@@ -137,55 +132,66 @@ turtle.forward(steps: 25)
     turtle.right(by: 90)
     turtle.penDown()
     
-    turtle.forward(steps: 75)
-    turtle.right(by: 90)
+        turtle.forward(steps: 75)
+        turtle.right(by: 90)
 
-    turtle.forward(steps: 25)
-    turtle.right(by: 90)
-
-
-    turtle.forward(steps: 25)
-    turtle.left(by: 90)
+        turtle.forward(steps: 25)
+        turtle.right(by: 90)
 
 
-    turtle.forward(steps: 50)
-    turtle.left(by: 90)
+        turtle.forward(steps: 25)
+        turtle.left(by: 90)
 
 
-    turtle.forward(steps: 25)
-    turtle.right(by: 90)
+        turtle.forward(steps: 50)
+        turtle.left(by: 90)
 
 
-    turtle.forward(steps: 25)
-    turtle.right(by: 90)
+        turtle.forward(steps: 25)
+        turtle.right(by: 90)
 
 
-    turtle.forward(steps: 75)
-    turtle.right(by: 90)
+        turtle.forward(steps: 25)
+        turtle.right(by: 90)
 
 
-    turtle.forward(steps: 25)
-    turtle.right(by: 90)
+        turtle.forward(steps: 75)
+        turtle.right(by: 90)
 
-    turtle.forward(steps: 25)
-    turtle.left(by: 90)
 
-    turtle.forward(steps: 50)
-    turtle.left(by: 90)
+        turtle.forward(steps: 25)
+        turtle.right(by: 90)
 
-    turtle.forward(steps: 25)
-    turtle.right(by: 90)
+        turtle.forward(steps: 25)
+        turtle.left(by: 90)
 
-    turtle.forward(steps: 25)
+        turtle.forward(steps: 50)
+        turtle.left(by: 90)
+
+        turtle.forward(steps: 25)
+        turtle.right(by: 90)
+
+        turtle.forward(steps: 25)
     
     turtle.penUp()
     turtle.forward(steps: 50)
     turtle.right(by: 90)
     turtle.forward(steps: 50)
     turtle.penDown()
-    
+//    turtle.drawSelf()
 }
-for draw in 1...6 {
+
+for _ in 1...6 {
+for _ in 1...6 {
     drawH()
 }
 
+turtle.penUp()
+turtle.right(by: 180)
+turtle.forward(steps: 600)
+turtle.left(by: 90)
+turtle.forward(steps: 100)
+turtle.left(by: 90)
+turtle.penDown()
+turtle.drawSelf()
+}
