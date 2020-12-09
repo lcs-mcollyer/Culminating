@@ -38,7 +38,8 @@ PlaygroundPage.current.liveView = canvas
 let turtle = Tortoise(drawingUpon: canvas)
 
 turtle.penDown()
-turtle.left(by: 90)
+turtle.backward(steps: 600)
+turtle.left(by: 45)
 turtle.backward(steps: 25)
 
 
@@ -181,8 +182,8 @@ turtle.forward(steps: 25)
 //    turtle.drawSelf()
 }
 
-for _ in 1...6 {
-for _ in 1...6 {
+for _ in 1...15 {
+for _ in 1...15 {
     drawH()
 }
 
